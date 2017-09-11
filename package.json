@@ -1,0 +1,29 @@
+{
+  "name": "user-and-task-manager",
+  "version": "1.0.0",
+  "description": "a user with tasks manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marten790@bitbucket.org/marten790/user-and-task-manager.git"
+  },
+  "keywords": [
+    "users",
+    "tasks",
+    "CRUD"
+  ],
+  "author": "@marten790",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/marten790/user-and-task-manager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}
