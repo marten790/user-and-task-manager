@@ -8,16 +8,9 @@ var TaskSchema = mongoose.Schema({
 		"date_time" : {
 			type: Date,
 			default: Date.now
-		},
-		status: {
-			type: [{
-				enum: ['pending', 'ongoing', 'completed']
-			}],
-			default: ['pending']
 		}
 	}
 ,{ _id : true });
-
 
 var UserSchema = new Schema({
 	username: "",

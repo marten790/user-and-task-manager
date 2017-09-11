@@ -1,7 +1,7 @@
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
-  Task = require('./api/models/user'), //created model loading here
+  Task = require('./api/models/user'), 
   bodyParser = require('body-parser'),
   db = require('./db');
 

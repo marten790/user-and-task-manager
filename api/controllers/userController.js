@@ -66,7 +66,6 @@ exports.read_task = function(req, res) {
   User.findOne({_id: req.params.userId}, function(err, task) {
     if (err)
       res.send(err);
-
       var taskById = task.tasks.id(req.params.taskId);
       res.json(taskById);
   });
@@ -75,7 +74,6 @@ exports.update_task = function(req, res) {
   User.findById({_id: req.params.userId}, function(err, task) {
     if (err)
       res.send(err);
-
       var taskObject = task.tasks.id(req.params.taskId);
       taskObject.set(req.body);
       task.save(function (err) {
@@ -89,7 +87,6 @@ exports.delete_task = function(req, res) {
   User.findById({_id: req.params.userId}, function(err, task) {
     if (err)
       res.send(err);
-
       var taskObject = task.tasks.id(req.params.taskId).remove();
       task.save(function (err) {
         if (err) return handleError(err)
