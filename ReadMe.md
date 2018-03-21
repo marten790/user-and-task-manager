@@ -5,7 +5,7 @@ NodeJS
 If you wish to use a diffrent db then please update the db.js file with the details you prefer.
 
 ###Clone:
-git clone https://marten790@bitbucket.org/marten790/user-and-task-manager.git
+git clone https://github.com/marten790/user-and-task-manager.git
 
 ### Install Dependencies from route:
 npm install
