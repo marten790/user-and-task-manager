@@ -1,6 +1,13 @@
-// // db.js
-mongoose = require('mongoose'),
- url = 'mongodb://marten790:Password123@cluster0-shard-00-00-fe0ib.mongodb.net:27017,cluster0-shard-00-01-fe0ib.mongodb.net:27017,cluster0-shard-00-02-fe0ib.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
+// db.js
+var mongoose = require('mongoose');
+const mongoDB = 'mongodb+srv://testdb:xMgvcI9qvIlbsMPd@cluster0-fe0ib.mongodb.net/test?retryWrites=true&w=majority';
 
-mongoose.Promise = global.Promise;
-mongoose.connect(url);
+
+mongoose.connect(mongoDB, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(()=> console.log('Database Connection Successful!!'))
+.catch(err => console.error(err));
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
