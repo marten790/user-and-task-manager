@@ -20,7 +20,7 @@
   "homepage": "https://bitbucket.org/marten790/user-and-task-manager#readme",
   "dependencies": {
     "body-parser": "^1.18.0",
-    "express": "^4.15.4",
+    "express": "^4.17.3",
     "mongoose": "^5.7.13"
   },
   "devDependencies": {
